@@ -1,0 +1,71 @@
+.sa-heatmap-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 99999;
+}
+
+.sa-heatmap-dot {
+	position: absolute;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+.sa-heatmap-dot.cold {
+	background: rgba(0, 0, 255, 0.3);
+	box-shadow: 0 0 15px rgba(0, 0, 255, 0.2);
+}
+
+.sa-heatmap-dot.warm {
+	background: rgba(255, 255, 0, 0.4);
+	box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+}
+
+.sa-heatmap-dot.hot {
+	background: rgba(255, 0, 0, 0.5);
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.sa-heatmap-legend {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 12px 16px;
+	z-index: 100000;
+	font-size: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.sa-heatmap-legend-title {
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.sa-heatmap-legend-scale {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.sa-heatmap-legend-gradient {
+	width: 120px;
+	height: 12px;
+	border-radius: 3px;
+	background: linear-gradient(to right, rgba(0, 0, 255, 0.3), rgba(0, 255, 0, 0.4), rgba(255, 255, 0, 0.5), rgba(255, 128, 0, 0.6), rgba(255, 0, 0, 0.7));
+}
+
+.sa-heatmap-legend-labels {
+	display: flex;
+	justify-content: space-between;
+	font-size: 10px;
+	color: #666;
+	margin-top: 4px;
+	width: 120px;
+}
