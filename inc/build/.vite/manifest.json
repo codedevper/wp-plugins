@@ -1,0 +1,85 @@
+{
+  "_index.esm.js": {
+    "file": "js/index.esm.js",
+    "name": "index.esm"
+  },
+  "_nonce.js": {
+    "file": "js/nonce.js",
+    "name": "nonce",
+    "imports": [
+      "_index.esm.js"
+    ]
+  },
+  "src/main.ts": {
+    "file": "js/main.js",
+    "name": "main",
+    "src": "src/main.ts",
+    "isEntry": true,
+    "imports": [
+      "_index.esm.js"
+    ],
+    "css": [
+      "assets/css/main.css"
+    ]
+  },
+  "src/pages/app/render.ts": {
+    "file": "js/app.js",
+    "name": "app",
+    "src": "src/pages/app/render.ts",
+    "isEntry": true,
+    "imports": [
+      "_index.esm.js",
+      "_nonce.js"
+    ]
+  },
+  "src/pages/server/analytics/authors/render.ts": {
+    "file": "js/analytics-authors.js",
+    "name": "analytics-authors",
+    "src": "src/pages/server/analytics/authors/render.ts",
+    "isEntry": true,
+    "imports": [
+      "_index.esm.js",
+      "_nonce.js"
+    ]
+  },
+  "src/pages/server/analytics/render.ts": {
+    "file": "js/analytics.js",
+    "name": "analytics",
+    "src": "src/pages/server/analytics/render.ts",
+    "isEntry": true,
+    "imports": [
+      "_index.esm.js",
+      "_nonce.js"
+    ]
+  },
+  "src/pages/server/analytics/visitors/render.ts": {
+    "file": "js/analytics-visitors.js",
+    "name": "analytics-visitors",
+    "src": "src/pages/server/analytics/visitors/render.ts",
+    "isEntry": true,
+    "imports": [
+      "_index.esm.js",
+      "_nonce.js"
+    ]
+  },
+  "src/pages/server/dashboard/render.ts": {
+    "file": "js/server-dashboard.js",
+    "name": "server-dashboard",
+    "src": "src/pages/server/dashboard/render.ts",
+    "isEntry": true,
+    "imports": [
+      "_index.esm.js",
+      "_nonce.js"
+    ]
+  },
+  "src/pages/server/render.ts": {
+    "file": "js/server.js",
+    "name": "server",
+    "src": "src/pages/server/render.ts",
+    "isEntry": true,
+    "imports": [
+      "_index.esm.js",
+      "_nonce.js"
+    ]
+  }
+}

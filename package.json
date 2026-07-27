@@ -1,0 +1,42 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:watch": "tsc && vite build --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codedevper/wp-plugins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/codedevper/wp-plugins/issues"
+  },
+  "homepage": "https://github.com/codedevper/wp-plugins#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "alpinejs": "^3.15.12",
+    "firebase": "^12.16.0",
+    "preline": "^4.2.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.1.5",
+    "web-vitals": "^6.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.11",
+    "@types/alpinejs": "^3.13.11",
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
+}
